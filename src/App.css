@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#landpage-icon{
+  width: 200px;
+}
+
+body{
+  background: url('/market_trading.png');
+  background-position: center;
+  background-size: cover;
+}
+
+aside{
+  font-family: sans-serif;
+  text-align: left;
+}
+
+/* Calculator.css */
+
+/* Base styles (Mobile First Approach) */
+.wrapper {
+  background: rgba(0,0,0,0.85);
+  padding: 40px 40px;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tablet devices */
+@media (min-width: 600px) {
+  .wrapper {
+    width: 85%;
+    max-width: 800px;
+  }
+  
+  p{
+    font-size: 1.2rem;
+  }
+}
+
+/* Small desktop devices */
+@media (min-width: 992px) {
+  .wrapper {
+    width: 95vh;
+    max-width: 1000px;
+  }
+}
+
+/* Large desktop devices */
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 980px;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,59 @@
+h2{
+	margin-top: 65px;
+}
+
+.resource-icon{
+	width: 18px;
+	height: 18px;
+}
+
+.ore-options{
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+}
+
+.ore-option{
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+#ore-picker{
+	margin-bottom: 15px;
+}
+
+#amount-input {
+	margin: 10px 0;
+}
+
+table {
+	width: 50%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 25px auto;
+}
+
+table .resource-icon{
+	width: 24px;
+	height: 24px;
+}
+
+th, td {
+	border: 1px solid #606060;
+	padding: 12px;
+	text-align: center;
+}
+
+th {
+	background-color: #191919;
+}
+
+th p{
+	margin: 0;
+}
+
+td {
+	background: rgb(0,0,0);
+	font-weight: bold;
+}
