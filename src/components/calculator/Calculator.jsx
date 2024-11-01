@@ -16,8 +16,8 @@ const Calculator = () => {
 
     const rates = [
         [1, 1.89, 2.4],
-        [0.5291, 1, 1.2698],
-        [0.4167, 0.7875, 1]
+        [0.435, 1, 1.21],
+        [0.33, 0.59, 1]
     ];
 
     const [selectedOre, setSelectedOre] = useState(ORE.GOLD);
