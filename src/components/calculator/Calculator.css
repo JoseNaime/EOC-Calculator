@@ -1,25 +1,38 @@
-h2{
-	margin-top: 65px;
+.resource-icon,
+table .resource-icon {
+	width: 20px;
+	height: 20px;
 }
 
-.resource-icon{
-	width: 18px;
-	height: 18px;
+table .resource-icon {
+	width: 24px;
+	height: 24px;
 }
 
-.ore-options{
-	justify-content: center;
+.ore-options, .ore-option {
 	display: flex;
+}
+
+.ore-options {
+	justify-content: center;
 	margin: 0 auto;
+	column-gap: 35px;
 }
 
 .ore-option{
+	width: fit-content;
 	display: flex;
 	flex-direction: column;
-	width: 100px;
 }
 
-#ore-picker{
+.ore-option div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 5px;
+}
+
+#ore-picker {
 	margin-bottom: 15px;
 }
 
@@ -27,16 +40,23 @@ h2{
 	margin: 10px 0;
 }
 
+#rates-row{
+	font-size: 0.8rem;
+	font-weight: bold;
+	font-style: italic;
+
+}
+
+#rates-row td{
+	padding: 10px 0;
+	background: rgb(16, 16, 16);
+}
+
 table {
 	width: 50%;
 	table-layout: fixed;
 	border-collapse: collapse;
 	margin: 25px auto;
-}
-
-table .resource-icon{
-	width: 24px;
-	height: 24px;
 }
 
 th, td {
@@ -49,11 +69,11 @@ th {
 	background-color: #191919;
 }
 
-th p{
+th p {
 	margin: 0;
 }
 
 td {
-	background: rgb(0,0,0);
+	background-color: rgb(0, 0, 0);
 	font-weight: bold;
 }

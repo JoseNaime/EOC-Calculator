@@ -5,30 +5,34 @@
   margin: 0 auto;
 }
 
-#landpage-icon{
-  width: 200px;
+#landpage-icon {
+  position: absolute;
+  left: 100px;
+  top: 25px;
+  width: 125px;
 }
 
-body{
-  background: url('/market_trading.png');
-  background-position: center;
-  background-size: cover;
+body {
+  background: url('/images/market_trading.png') center/cover no-repeat;
 }
 
-aside{
+aside {
   font-family: sans-serif;
   text-align: left;
+  font-size: 1rem;
+  padding-bottom: 25px;
 }
 
-/* Calculator.css */
-
-/* Base styles (Mobile First Approach) */
 .wrapper {
-  background: rgba(0,0,0,0.85);
-  padding: 40px 40px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
   height: 100%;
-  max-width: 600px;
   margin: 0 auto;
+}
+
+.wrapper-content{
+  padding: 25px 75px;
+  padding-top: 100px;
 }
 
 /* Tablet devices */
@@ -38,7 +42,7 @@ aside{
     max-width: 800px;
   }
   
-  p{
+  p {
     font-size: 1.2rem;
   }
 }

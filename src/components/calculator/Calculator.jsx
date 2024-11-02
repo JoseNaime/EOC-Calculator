@@ -1,8 +1,8 @@
 import './Calculator.css';
 import {useState} from 'react';
-import goldImage from '/gold.png';
-import silverImage from '/silver.png';
-import copperImage from '/cooper.png';
+import goldImage from '/images/gold.png';
+import silverImage from '/images/silver.png';
+import copperImage from '/images/cooper.png';
 
 const Calculator = () => {
     const ORE = {
@@ -15,7 +15,7 @@ const Calculator = () => {
     const oreImages = [goldImage, silverImage, copperImage];
 
     const rates = [
-        [1, 1.89, 2.4],
+        [1, 1.91, 2.64],
         [0.435, 1, 1.21],
         [0.33, 0.59, 1]
     ];
@@ -43,7 +43,6 @@ const Calculator = () => {
 
     return (
         <>
-            <h2>Calculator</h2>
             <div id="ore-picker">
                 <label>Select Ore to Trade:</label>
                 <div className="ore-options">
@@ -92,10 +91,16 @@ const Calculator = () => {
                 <tbody>
                 <tr>
                     {convertedAmounts.map((convAmount, index) => (
-                        <td key={index}>
-                            {convAmount.toFixed(0)}
+                        <td key={index + "_conv"}>
+                            {Math.floor(convAmount)}
                         </td>
-
+                    ))}
+                </tr>
+                <tr id="rates-row">
+                    {convertedAmounts.map((convAmount, index) => (
+                        <td key={index + "_rates"}>
+                            {rates[selectedOre][index]}
+                        </td>
                     ))}
                 </tr>
                 </tbody>
