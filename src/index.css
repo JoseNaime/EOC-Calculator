@@ -73,3 +73,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  html, body{
+    height: auto;
+  }
+  
+  .wrapper{
+    padding: 15px 0;
+    padding-bottom: 30px;
+  }
+}
