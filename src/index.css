@@ -38,19 +38,12 @@ body {
 }
 
 input[type="number"]{
-  width: 70px;
+  font-family: "El Messiri", sans-serif;
+  width: 50px;
   border: none;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid #838383;
   background: none;
   text-align: center;
-}
-
-#select-cal-type{
-  display: flex;
-  column-gap: 15px;
-  margin-bottom: 15px;
-  justify-content: center;
-  
 }
 
 #root {
@@ -58,6 +51,69 @@ input[type="number"]{
   text-align: center;
   height: 100%;
   margin: 0 auto;
+}
+
+#select-cal-type{
+  display: flex;
+  column-gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  height: 80px;
+}
+
+#navbar ul{
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #A6927E;
+  font-weight: bold;
+  background: url('/textures/wood_sign.png') center no-repeat ;
+  background-size: cover;
+  height: 45px;
+  padding: 0 20px;
+  text-align: center;
+}
+#navbar li p {
+  text-shadow:
+          1.5px 1.5px 0 #221A18,
+          -1px 1px 0 #221A18FF,
+          1px -1px 0 #221A18FF,
+          -1px -1px 0 #221A18FF;
+}
+
+#navbar li.active{
+  color: #FFF2E4;
+}
+
+nav li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control darkness */
+  z-index: 1;
+}
+
+nav * {
+  position: relative;
+  z-index: 2; /* Ensures content stays above the overlay */
 }
 
 h1 {
@@ -116,7 +172,7 @@ aside {
 
 .wrapper-content {
   padding: 25px 75px;
-  padding-top: 100px;
+  padding-top: 0;
 }
 
 /* Ore Options Styles */
@@ -190,6 +246,11 @@ th {
   background-color: #191919;
 }
 
+th.hidden{
+  visibility: hidden;
+  border: none;
+}
+
 th p {
   margin: 0;
 }
@@ -199,12 +260,24 @@ td {
   font-weight: bold;
 }
 
+td.change-input input{
+  color: #2ba031;
+  font-weight: bold;
+}
+
+td.change-input:before{
+  content: "+";
+  color: #2ba031;
+}
+
+#time-calculator{
+  width: 100%;
+}
+
 /* Landpage Icon */
 #landpage-icon {
-  position: absolute;
-  left: 100px;
-  top: 25px;
-  width: 125px;
+  position: relative;
+  width: 80px;
 }
 
 /* Media Queries */

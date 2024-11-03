@@ -1,23 +1,10 @@
 import '/src/index.css';
 import { useState } from 'react';
-import goldImage from "/images/gold.png";
-import silverImage from "/images/silver.png";
-import copperImage from "/images/copper.png";
+import {ORE_TYPES, ores} from "../../constants/oreConstants.js";
+
 import PropTypes from "prop-types";
 
 const ExchangeCalculatorForm = ({ formType, amount, setAmount, targetAmounts, setTargetAmounts, convertedAmounts, setConvertedAmounts }) => {
-    const ORE_TYPES = {
-        GOLD: 0,
-        SILVER: 1,
-        COPPER: 2
-    };
-
-    const ores = [
-        { name: "Gold", image: goldImage },
-        { name: "Silver", image: silverImage },
-        { name: "Copper", image: copperImage }
-    ];
-
     const rates = [
         [1, 1.91, 2.64],
         [0.5236, 1, 1.21],
